@@ -1,0 +1,299 @@
+/* GENERAL
+-----------------------------------------*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #333px;
+}
+
+a {
+  color: #22a2cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.populaire { 
+  font-family: Populaire;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.blue {
+ color: #42c8f4;
+}
+
+
+/* TOP SLIDE
+-----------------------------------------*/
+
+nav {
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  height: 80px;
+  z-index: 10;
+}
+
+nav .wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav .wrapper h1 {
+  width: 291px;
+  height: 54px;
+  float: left;
+  text-indent: -9999px;
+  background: url(../img/logo.png) 0 0 no-repeat;
+  margin-top: 15px;
+}
+
+nav .left_side {
+  float: left;
+}
+
+nav .left_side .screenshots {
+  line-height: 124px;
+  color: #333;
+  text-decoration: underline;
+  margin-left: 12px;
+}
+
+nav .left_side .screenshots:hover {
+  color: #22a2cc;
+}
+
+nav .right_side {
+  float: right;
+  font-size: 30px;
+  width: 170px;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+nav .right_side .ipad_icon,
+#bottom .ipad_icon {
+  width: 49px;
+  height: 58px;
+  display: block;
+  float: left;
+  background: url(../img/icon_ipad.png) 0 0 no-repeat;
+  margin-right: 12px;
+}
+
+nav .right_side .gray_text {
+  color: #666;
+}
+
+.achtung,
+.instant_views,
+.first_slide_details,
+#middle .left_side,
+#middle .right_side,
+#bottom .details,
+#bottom .app_store_link {
+  position: absolute;
+  z-index: 10;
+}
+
+.achtung {
+  width: 200px;
+  height: 40px;
+  top: 440px;
+  left: 447px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.achtung span,
+.instant_views span,
+#middle .left_side span {
+  display: block;
+}
+
+.instant_views span {
+  margin-bottom: 14px;
+}
+
+.achtung .large {
+  font-size: 36px;
+  margin-bottom: 6px;
+  margin-top: -5px;
+}
+
+.instant_views {
+  width: 225px;
+  height: 105px;
+  top: 290px;
+  left: 672px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+
+.instant_views .large {
+  font-size: 36px;
+}
+
+.first_slide_details {
+  width: 175px;
+  height: 195px;
+  top: 421px;
+  left: 697px;
+  color: #222;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.first_slide_details em {
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+}
+
+#middle .left_side,
+#middle .right_side {
+  width: 90px;
+  height: 160px;
+  top: 476px;
+  left: 864px;
+  color: #222;
+  text-align: right;
+  font-size: 14px;
+  line-height: 18px;
+  transform:scale(0.6, 0.6);
+  -ms-transform:scale(0.6, 0.6);
+  -moz-transform:scale(0.6, 0.6);
+  -webkit-transform:scale(0.6, 0.6);
+  -o-transform:scale(0.6,0.6);
+}
+
+#middle .left_side .populaire {
+  font-size: 44px;
+  transform:scale(0.6, 0.6);
+  -ms-transform:scale(0.6, 0.6);
+  -moz-transform:scale(0.6, 0.6);
+  -webkit-transform:scale(0.6, 0.6);
+  -o-transform:scale(0.6, 0.6);
+  color: #fff;
+  line-height: 43px;
+  margin-right: -24px;
+}
+
+#middle .left_side .details {
+  margin-top: -12px;
+}
+
+#middle .right_side {
+  top: 493px;
+  left: 935px;
+  color: #fff;
+  text-align: left;
+}
+
+#bottom .details {
+  width: 250px;
+  height: 200px;
+  top: 213px;
+  left: 433px;
+  color: #222;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+#bottom .app_store_link .ipad_icon {
+  float: left;
+}
+
+#bottom .app_store_link {
+  width: 250px;
+  height: 80px;
+  top: 337px;
+  left: 431px;
+  font-size: 27px;
+}
+
+#bottom .app_store_link .gray_text {
+  line-height: 46px;
+  color: #666;
+}
+
+/* 3D STUFF
+-----------------------------------------*/
+
+.csstransforms #wrap {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.csstransforms #container {
+  position: relative;
+  top: 90px;
+}
+
+#container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.csstransforms3d #environment {
+  -webkit-perspective: 500;
+  -webkit-perspective-origin: center 220px;
+  width: 100%;
+}
+
+.csstransforms #content {
+  -webkit-transition: opacity 0.5s;
+}
+
+.csstransforms #content {
+  position: absolute;
+  height: 100%;
+}
+
+.csstransforms #content section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.csstransforms3d #top {
+  -webkit-transform: translate3d( 0, 0, 0 );
+  margin-left: 85px;
+}
+
+.csstransforms.csstransforms3d #content section#middle {
+  -webkit-transform: translate3d( 0, 0, -1000px );
+  top: -330px;
+  left: -617px;
+}
+
+.csstransforms3d #bottom {
+  -webkit-transform: translate3d( 0, 0, -2000px );
+}
+
+.csstransforms3d #bottom img {
+  margin: -10px 0 0 390px;
+}
+
+.csstransforms #content.transitions-on {
+  -webkit-transition: -webkit-transform 1s;
+     -moz-transition:    -moz-transform 1s;
+       -o-transition:      -o-transform 1s;
+          transition:         transform 1s;
+}
+
+.csstransforms3d #content {
+  -webkit-transform-style: preserve-3d;
+/*  -webkit-transform: rotateY(10deg);*/
+}
+
+.csstransforms.no-touch #scroll-proxy { height: 3000px; }
