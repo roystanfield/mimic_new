@@ -40,9 +40,6 @@ h1 {
 }
 
 h2 {
-}
-
-h2 {
   font-size: 21px;
   line-height: 26px;
   margin: 0 0 33px 0;
@@ -443,6 +440,7 @@ footer #color_bar {
 
 @media only screen and (min-width: 1510px){
 
+  
   .post {
     width: 1180px;
     margin: 30px auto 220px auto;
@@ -458,8 +456,13 @@ footer #color_bar {
 (min-resolution: 192dpi) {
 
   header .contact li a {
-    background-image: url("sprites@2x.png");
-    background-size: 112px 376px;
+    background-image: url("/images/sprites@2x.png");
+    background-size: 152px 78px;
+  }
+
+  .sell_on_etsy h2 {
+    font-size: 60px;
+    line-height: 62px;
   }
 }
 
