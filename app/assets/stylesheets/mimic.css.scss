@@ -79,7 +79,7 @@ p {
 
 header .contact {
   padding: 0;
-  width: 154px;
+  width: 212px;
   margin: 15px auto 0 auto;
   overflow: hidden;
 }
@@ -104,6 +104,12 @@ header .contact li.twitter a {
   background-position: -38px 0;
   &:hover {background-position: -38px -39px;}
   &:active {background-position: -38px -38px;}
+}
+
+header .contact li.svbtle a {
+  background-position: -114px 0;
+  &:hover {background-position: -114px -39px;}
+  &:active {background-position: -114px -38px;}
 }
 
 header .contact li.dribbble a {
