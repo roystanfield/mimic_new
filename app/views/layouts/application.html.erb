@@ -10,94 +10,31 @@
   <% end %>
 
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <script type="text/javascript" src="//use.typekit.net/xui2fgc.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
   <section id='main_wrapper'>
-<!--     <div id="navigation">
-      <a href='#' id='next'>next</a>
-      <a href='#' id='previous'>previous</a>
-    </div> -->
 
     <header>
-      <a id="artwork_link" href="/artwork">Artwork</a>
-      <h1><a href="mailto:roystanfield@gmail.com">Roy Stanfield</a><br />Web and mobile app designer working for <a href="http://etsy.com">Etsy</a> in <span class="no_wrap">NYC</span></h1>
-
-      <ul class="contact">
-        <li class="info"><a id="info_button" class="hiding" href="#">Info</a></li>
-        <li class="twitter"><a href="https://twitter.com/RoyStanfield">Roy Stanfield on Twitter</a></li>
-        <li class="svbtle"><a href="http://roystanfield.svbtle.com/">Roy Stanfield on Svbtle</a></li>
-        <li class="dribbble"><a href="http://dribbble.com/RoyStanfield">Roy Stanfield on Dribbble</a></li>
-      </ul>
-
-      <article id="info" class="hide">
-        <div class="inner_wrapper">
-          <div class="left_side">
-            <div class="wrapper clients_and_projects_wrapper">
-              <h3>Clients &amp; Projects</h3>
-              <ul>
-                <li><a href="http://etsy.com">Etsy</a></li>
-                <li><a href="http://mixel.cc/">Mixel</a></li>
-                <li>Hashable</li>
-                <li><a href="http://cloudassass.in/">CloudAssass.in</a></li>
-                <li><a href="http://www.theoddslipper.com/">The Odd Slipper</a></li>
-                <li><a href="http://onstellarrays.com/">On Stellar Rays</a></li>
-                <li><a href="http://www.eastofborneo.org/">East of Borneo (CalArts)</a></li>
-                <li><a href="http://www.asmallworld.net/">A Small World</a></li>
-                <li><a href="http://www.mutualart.com/">MutualArt</a></li>
-              </ul>
-            </div><!-- .wrapper -->
-
-
-            <div class="wrapper contact_wrapper">
-              <h3>Contact</h3>
-              <ul>
-                <li><a href="mailto:roystanfield@gmail.com">RoyStanfield@gmail.com</a></li>
-                <li><a href="https://twitter.com/roystanfield">@roystanfield</a></li>
-                <li><a href="http://dribbble.com/RoyStanfield">Dribbble</a></li>
-                <li><a href="http://roystanfield.svbtle.com/">Svbtle blog</a></li>
-              </ul>
-            </div><!-- .wrapper -->
-          </div> <!-- .left_side -->
-
-
-          <div class="right_side">
-            <div class="wrapper skills_wrapper">
-              <h3>Skills</h3>
-              <ul>
-                <li>Web &amp; user interface design</li>
-                <li>User Experience</li>
-                <li>Brand development</li>
-                <li>Responsive web design</li>
-                <li>Front-end web coding</li>
-                <li>Photoshop, Illustrator and InDesign</li>
-                <li>HTML5 and CSS3</li>
-                <li>Javascript (jQuery)</li>
-                <li>Ruby on Rails</li>
-                <li>iOS and Objective-C</li>
-              </ul>
-            </div><!-- .wrapper -->
-          </div> <!-- .right_side -->
-        </div><!-- .inner_wrapper -->
-        <div id="close_info"><a href="#">Close</a></div>
-      </article>
     </header>
 
       <section id="post_wrapper">
-      <%= yield %>
+        <%= yield %>
       </section>
-   </section>
+  </section>
 
   <footer>
-    <%= responsive_image_tag("/images/cat.png", :'1x' => "/images/cat.png", :'2x' => "/images/cat@2x.png", :id => 'cat_graphic') %>
-    <div id="to_top">
-      <a href="#">Back to Top</a>
-    </div>
-    <div id="color_bar"></div>
+    <ul>
+      <li class="first"><%= link_to "@roystanfield", "https://twitter.com/RoyStanfield"%></li>
+      <li><%= link_to "Dribbble", "https://dribbble.com/RoyStanfield" %></li>
+      <li><%= link_to "Instagram", "http://instagram.com/roystanfield" %></li>
+      <li><%= link_to "GitHub", "https://github.com/roystanfield" %></li>
+      <li class="last"><%= link_to "Svbtle Blog", "http://roystanfield.svbtle.com/" %></li>
+    </ul>
   </footer>
 </body>
+  <%= javascript_include_tag "application" %>
+  <script type="text/javascript" src="//use.typekit.net/bva6daz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </html>
