@@ -4,41 +4,31 @@
   <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and mobile app designer working for <%= link_to "Etsy", "http://etsy.com/" %> in Brooklyn, NYC.
   </h1>
 
-  <section class="columns">
-    <section class="left_column">
+  <section id="single_image_for_phones">
+    <%= image_tag_with_at2x "/images/phone_fat_bachelor.png", alt: "Fat Bachelor, an iOS app by Roy Stanfield" %>
+  </section>
+
+  <section class="writing">
       <p>
-        I&apos;ve recently finished designing and launching Etsy&apos;s second native app, <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %>, in six countries. I&apos;m currently working on both iOS and Android designs for a new project launching later this year. My mornings are spent jogging to work while wearing a nerdsack. I usually follow this up with an hour of extracurricular iOS programming.
+        I&apos;ve recently finished designing Etsy&apos;s second native app, <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %>, which launched in six countries. I&apos;m currently working on both iOS and Android designs for a new project launching later this year. My mornings are spent jogging to work while wearing a nerdsack. I usually follow this up with an hour of extracurricular iOS programming.
       </p>
+
       <p>
         Before Etsy I worked at Mixel building fun apps for creating, sharing and remixing collages. While there I created designs for the iPad, iPhone and Web. On the web side I implemented my work using Ruby on Rails, Javascript and CSS. <%= link_to "Mixel was acquired by Etsy", "http://allthingsd.com/20130122/etsy-acquires-mixel-for-mobile-team/" %> in January 2013.
       </p>
-    </section>
-
-    <section class="right_column">
-      <ul>
-        <li><h3>Clients and Projects</h3></li>
-        <li><%= link_to "Etsy", "http://etsy.com" %></li>
-        <li><%= link_to "Mixel", "http://mixel.cc/" %></li>
-        <li>Hashable</li>
-        <li><%= link_to "On Stellar Rays", "http://onstellarrays.com" %></li>
-        <li><%= link_to "East of Borneo (CalArts)", "http://www.eastofborneo.org/" %></li>
-        <li><%= link_to "A Small World", "https://www.asmallworld.com" %></li>
-        <li><%= link_to "MutualArt", "http://www.mutualart.com" %></li>
-      </ul>
-    </section>
-  </section><!-- eo .columns -->
+  </section>
 
   <section id="carousel_wrapper">
       
       <div class="image_wrapper">
         <ul>
           <li>
-            <%= image_tag_with_at2x "/images/phone_fat_bachelor.png", alt: "Fat Bachelor, an iOS app by Roy Stanfield" %>
-            <p>Fat Bachelor, Coming in 2015</p>
-          </li>
-          <li>
             <%= image_tag_with_at2x "/images/phone_etsy.png", alt: "Sell on Etsy, an iOS app for Etsy sellers" %>
             <p><%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8" %>, Etsy 2014</p>
+          </li>
+          <li>
+            <%= image_tag_with_at2x "/images/phone_fat_bachelor_red.png", alt: "Fat Bachelor, an iOS app by Roy Stanfield" %>
+            <p>Fat Bachelor, Coming in 2015</p>
           </li>
           <li>
             <%= image_tag_with_at2x "/images/phone_capsule.png", alt: "Capsule, an iOS app" %>
@@ -55,11 +45,11 @@
         <ul>
           <li>
             <span></span>
-            <%= image_tag_with_at2x "/images/app_icon_fb.png", alt: "Fat Bachelor app icon" %>
-          </li>
-          <li class="second">
-            <span></span>
             <%= image_tag_with_at2x "/images/app_icon_etsy.png", alt: "Sell on Etsy app icon" %>
+          </li>
+          <li>
+            <span></span>
+            <%= image_tag_with_at2x "/images/app_icon_fb.png", alt: "Fat Bachelor app icon" %>
           </li>
           <li>
             <span></span>
