@@ -84,6 +84,7 @@ li {
 .writing {
   margin-top: 32px;
   border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
 }
 
 #single_image_for_phones {
@@ -114,7 +115,7 @@ footer {
 @media only screen and (min-width: 768px) {
 
   body {
-    margin: 32px 0 0 0;
+    margin: 44px 0 0 0;
     background-color: body-color;
     font-family: $body-copy-family;
 
@@ -130,15 +131,20 @@ footer {
   }
 
   h1 {
-    font-size: 52px;
-    line-height: 72px;
+    font-size: 50px;
+    line-height: 68px;
     color: $body-copy-color-on-color-bg;
   }
 
   p {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 20px;
+    line-height: 34px;
     color: $body-copy-color-on-color-bg;
+  }
+
+  .content_wrapper {
+    width: 84%;
+    margin: 0 8%;
   }
 
   body.etsy {
@@ -184,6 +190,7 @@ footer {
   .writing {
     border-bottom: none;
     margin-bottom: 64px;
+    padding-bottom: 0;
   }
 
   #carousel_wrapper {
@@ -339,7 +346,14 @@ footer {
     margin: 0 auto;
   }
 
+  h1 {
+    font-size: 52px;
+    line-height: 72px;
+  }
+
   p {
+    font-size: 24px;
+    line-height: 38px;
     font-weight: 300;
   }
 
