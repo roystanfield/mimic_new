@@ -17,6 +17,16 @@ $capsule-body-color: #27ab31;
 $mixel-body-color: #19B5FE;
 
 
+// Temp work for Type Test
+
+#type_test p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: $body-copy-color;
+  margin: 20px 12px;
+}
+
 
 body {
   margin: 32px 0 0 0;

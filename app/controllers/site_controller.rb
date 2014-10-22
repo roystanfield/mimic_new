@@ -7,6 +7,10 @@ class SiteController < ApplicationController
     render :layout => 'artwork_layout'
   end
 
+  def fourteen
+    render :layout => 'fourteen_layout'
+  end
+
   # def mixel_acquired_by_etsy
   #   render :layout => false
   # end
