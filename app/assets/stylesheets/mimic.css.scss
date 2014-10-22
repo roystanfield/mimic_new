@@ -19,13 +19,54 @@ $mixel-body-color: #19B5FE;
 
 // Temp work for Type Test
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
 #type_test p {
   font-size: 14px;
   line-height: 24px;
   font-family: Helvetica, Arial, sans-serif;
   color: $body-copy-color;
-  margin: 20px 12px;
 }
+
+#type_test.sixteen p {
+  font-size: 16px;
+}
+
+.type_test_container {
+  max-width: 600px;
+  margin: 0 auto;
+  clear: left;
+  padding: 20px 16px;
+}
+
+#type_test ul {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+} 
+
+#type_test li {
+  float: left;
+}
+
+#type_test li a {
+  color: $anchor-link-color;
+  border-bottom: 4px solid #fff;
+  padding: 20px;
+} 
+
+#type_test li a.on_state {
+  border-bottom: 4px solid #09f;
+}
+
 
 
 body {
