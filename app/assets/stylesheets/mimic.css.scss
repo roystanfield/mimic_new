@@ -11,7 +11,7 @@ $headline-color-on-color-bg: #fff;
 $body-copy-color-on-color-bg: #fff;
 $anchor-link-color-on-color-bg: #fff;
 
-$etsy-body-color: #fa6c2a;
+$etsy-body-color: #ff5a00;
 $fb-body-color: #ef4035;
 $capsule-body-color: #27ab31;
 $mixel-body-color: #19B5FE;
@@ -151,6 +151,10 @@ li {
   display: none;
 }
 
+#carousel_wrapper .bigger_image_li {
+  margin-left: -25px;
+}
+
 footer {
   background-color: #fff;
   margin: 32px 0 0 0;
@@ -160,13 +164,6 @@ footer {
     text-align: center;
   }
 }
-
-
-
-
-
-
-
 
 
 
