@@ -36,7 +36,7 @@ $mixel-body-color: #19B5FE;
   font-size: 14px;
   line-height: 24px;
   font-family: Helvetica, Arial, sans-serif;
-  color: $body-copy-color;
+  color: $body-copy-color-on-color-bg;
 }
 
 #type_test .sixteen p {
@@ -73,7 +73,7 @@ $mixel-body-color: #19B5FE;
 
 body {
   margin: 32px 0 0 0;
-  background-color: $body-color;
+  background-color: $etsy-body-color;
   font-family: $body-copy-family;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -93,18 +93,18 @@ body {
 }
 
 a {
-  color: $anchor-link-color;
+  color: $anchor-link-color-on-color-bg;
   text-decoration: none;
   border-bottom: 2px solid rgba(255, 255, 255 , 0.25);
   &:hover {border-bottom: 2px solid rgba(255, 255, 255 , 0.5);}
-  &:visited {color: $anchor-link-color;}
+  &:visited {color: $anchor-link-color-on-color-bg;}
 }
 
 h1 {
   font-style: normal;
   font-weight: 400;
   font-family: $headlines-family;
-  color: $headline-color;
+  color: $headline-color-on-color-bg;
   font-size: 34px;
   line-height: 44px;
 }
@@ -114,7 +114,7 @@ h3, p {
   font-size: 18px;
   line-height: 30px;
   margin: 0 0 32px 0;
-  color: $body-copy-color;
+  color: $body-copy-color-on-color-bg;
   font-family: $body-copy-family;
 }
 
@@ -131,18 +131,27 @@ li {
   font-size: 18px;
   list-style: none;
   line-height: 30px;
-  color: $body-copy-color;
+  color: $body-copy-color-on-color-bg;
 }
 
 .writing {
   margin-top: 32px;
-  border-bottom: 1px solid #ccc;
   padding-bottom: 8px;
 }
 
 #single_image_for_phones {
   width: 290px;
   margin: 32px auto;
+}
+
+#single_image_for_phones img {
+  width: 100%;
+}
+
+#single_image_for_phones p {
+  margin: 16px;
+  font-size: 14px;
+  text-align: center;
 }
 
 #carousel_wrapper {
@@ -156,10 +165,16 @@ li {
 footer {
   background-color: #fff;
   margin: 32px 0 0 0;
-  padding-bottom: 32px;
+  padding: 32px 0;
 
   li {
     text-align: center;
+  }
+
+  a {
+    color: $etsy-body-color;
+    &:hover {border-bottom: none;}
+    &:visited {color: $etsy-body-color;}
   }
 }
 
