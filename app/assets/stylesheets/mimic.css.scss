@@ -8,10 +8,10 @@ $body-copy-family: "proxima-nova", "Helvetica", Arial, sans-serif;
 $headlines-family: "proxima-nova", "Helvetica", Arial, sans-serif;
 
 $headline-color-on-color-bg: #fff;
-$body-copy-color-on-color-bg: #fff;
+$body-copy-color-on-color-bg: #ccc;
 $anchor-link-color-on-color-bg: #fff;
 
-$etsy-body-color: #fa6c2a;
+$etsy-body-color: #000;
 $fb-body-color: #ef4035;
 $capsule-body-color: #27ab31;
 $mixel-body-color: #19B5FE;
@@ -91,6 +91,8 @@ body {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-bottom: 21px;
+  border: 20px solid #fff;
+  border-bottom: 0px;
 }
 
 .content_wrapper {
@@ -109,7 +111,7 @@ a {
 
 h1 {
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-family: $headlines-family;
   color: $headline-color-on-color-bg;
   font-size: 32px;
@@ -122,7 +124,7 @@ h3, p {
   font-style: normal;
   font-size: 18px;
   line-height: 30px;
-  margin: 0 0 32px 0;
+  margin: 0 0 50px 0;
   color: $body-copy-color-on-color-bg;
   font-family: $body-copy-family;
 }
@@ -227,9 +229,8 @@ footer {
   h1 {
     font-size: 50px;
     line-height: 68px;
-    color: $body-copy-color-on-color-bg;
-    text-align: left;
     margin-top: 40px;
+    margin-bottom: 60px;
   }
 
   p {
@@ -296,9 +297,10 @@ footer {
   #carousel_wrapper {
     display: block;
     width: 100%;
-    height: 845px;
+    height: 680px;
     clear: left;
     padding-bottom: 56px;
+    margin-top: 70px;
 
       ul {
         padding: 0;
@@ -330,7 +332,7 @@ footer {
               }
 
               img {
-                margin-bottom: 22px;
+                margin-bottom: 12px;
               }
           }
       }
@@ -454,7 +456,7 @@ footer {
 @media only screen and (min-width: 860px) {
 
   .content_wrapper {
-    width: 768px;
+    width: 788px;
     margin: 0 auto;
   }
 
