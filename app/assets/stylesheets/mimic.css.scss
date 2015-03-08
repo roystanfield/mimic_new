@@ -8,7 +8,7 @@ $body-copy-family: "proxima-nova", "Helvetica", Arial, sans-serif;
 $headlines-family: "proxima-nova", "Helvetica", Arial, sans-serif;
 
 $headline-color-on-color-bg: #fff;
-$body-copy-color-on-color-bg: #ccc;
+$body-copy-color-on-color-bg: #bbb;
 $anchor-link-color-on-color-bg: #fff;
 
 $etsy-body-color: #000;
@@ -88,7 +88,7 @@ body {
 
 .outside_wrapper {
   background: $etsy-body-color;
-  padding-top: 1px;
+  padding-top: 48px;
   padding-bottom: 1px;
   padding-bottom: 21px;
 }
@@ -115,7 +115,7 @@ h1 {
   font-size: 30px;
   line-height: 42px;
   text-align: center;
-  margin-top: 78px;
+  margin-top: 0px;
 }
 
 h3, p {
@@ -178,10 +178,6 @@ header .header_image_container {
   display: none;
 }
 
-#carousel_wrapper .bigger_image_li {
-  margin-left: -25px;
-}
-
 footer {
   background-color: #fff;
   margin: 21px 0 0 0;
@@ -227,18 +223,19 @@ footer {
   h1 {
     font-size: 48px;
     line-height: 68px;
-    margin-top: 40px;
-    margin-bottom: 56px;
+    margin-bottom: 64px;
   }
 
   p {
     font-size: 20px;
-    line-height: 34px;
+    line-height: 30px;
+    margin-right: 85px;
+    margin-left: 85px;
     color: $body-copy-color-on-color-bg;
   }
 
   .outside_wrapper {
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   .content_wrapper {
@@ -297,8 +294,8 @@ footer {
     width: 100%;
     height: 680px;
     clear: left;
-    padding-bottom: 56px;
     margin-top: 70px;
+    margin-bottom: 52px;
 
       ul {
         padding: 0;
@@ -311,7 +308,7 @@ footer {
   }
 
   #carousel_wrapper .image_wrapper {
-    width: 290px;
+    width: 410px;
     margin: 0 auto;
 
       ul {
@@ -325,8 +322,8 @@ footer {
             z-index: 0;
 
               p {
-                font-size: 14px;
-                color: rgba(255, 255, 255, 0.8);
+                font-size: 12px;
+                color: rgba(187, 187, 187, 0.8);
               }
 
               img {
@@ -454,19 +451,16 @@ footer {
 @media only screen and (min-width: 860px) {
 
   .content_wrapper {
-    width: 788px;
+    width: 810px;
     margin: 0 auto;
   }
 
   h1 {
-    font-size: 52px;
+    font-size: 58px;
     line-height: 72px;
-    margin-bottom: 60px;
   }
 
   p {
-    font-size: 24px;
-    line-height: 38px;
     font-weight: 300;
   }
 
