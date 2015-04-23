@@ -6,10 +6,10 @@ $(document).ready(function() {
   var dictionary = [];
   var currentVisibleScreensIndex = 0;
 
-  dictionary.push({key: 0, value: "etsy"});
-  dictionary.push({key: 1, value: "fb"});
-  dictionary.push({key: 2, value: "capsule"});
-  dictionary.push({key: 3, value: "mixel"});
+  dictionary.push({key: 0, value: "apple_watch"});
+  dictionary.push({key: 1, value: "etsy"});
+  // dictionary.push({key: 2, value: "capsule"});
+  // dictionary.push({key: 3, value: "mixel"});
 
   imagesArray = $(".image_wrapper").find("li");
   appIconsArray = $(".app_icon_wrapper").find("li");
