@@ -5,9 +5,9 @@
     <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and mobile app designer working for <%= link_to "Etsy", "http://etsy.com/" %> in Brooklyn, NYC.
     </h1>
 
-    <section id="single_image_for_phones">
-      <%= image_tag_with_at2x "/images/etsy_apple_watch_small.png", alt: "Sell on Etsy, an iOS app for Etsy sellers" %>
-      <p><%= link_to "Etsy App", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %> on Apple Watch, Etsy 2015</p>
+    <section class="single_image_for_phones watch_image">
+      <%= image_tag_with_at2x "/images/etsy_apple_watch_small.png", alt: "Etsy app for Apple Watch" %>
+      <p><%= link_to "Etsy app", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %> for Apple Watch, Etsy 2015</p>
     </section>
 
     <section class="writing">
@@ -21,7 +21,7 @@
             <ul>
               <li class="bigger_image_li">
                 <%= image_tag_with_at2x "/images/etsy_apple_watch.png", alt: "Etsy app for Apple Watch" %>
-                <p><%= link_to "Etsy App", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %> on Apple Watch, Etsy 2015</p>
+                <p><%= link_to "Etsy app", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %> for Apple Watch, Etsy 2015</p>
               </li>
               <li class="bigger_image_li">
                 <%= image_tag_with_at2x "/images/phone_reader_etsy.png", alt: "Sell on Etsy, an iOS app for Etsy sellers" %>
@@ -47,6 +47,12 @@
         <p>
           In 2014 I designed Etsy&apos;s second native app, <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %>, which launched in six countries. Building on top of that foundation my team and I launched a card reader for both Android and iOS devices that helps sellers make in-person cash and credit card sales. Unlike a Square reader, it is powerfully integrated with an Etsy seller&apos;s shop inventory. Fred Wilson writes about it <%= link_to "here", "http://avc.com/2014/10/feature-friday-etsy-in-real-life/" %>.
         </p>
+
+        <section class="single_image_for_phones">
+          <%= image_tag_with_at2x "/images/phone_etsy_reader_small.png", alt: "Sell on Etsy, an iOS app for Etsy sellers" %>
+          <p><%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8" %> and <%= link_to "The Sell on Etsy Reader", "https://www.etsy.com/reader" %>, Etsy 2014</p>
+        </section>
+
         <p>
           Before Etsy I worked at Mixel, building fun apps for creating, sharing and remixing collages. While there I created designs for the iPad, iPhone and web. On the web side, I implemented my work using Ruby on Rails, Javascript and CSS. <%= link_to "Mixel was acquired by Etsy", "http://allthingsd.com/20130122/etsy-acquires-mixel-for-mobile-team/" %> in January 2013.
         </p>

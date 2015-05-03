@@ -159,16 +159,20 @@ header .header_image_container {
   padding-bottom: 8px;
 }
 
-#single_image_for_phones {
+.single_image_for_phones {
   width: 270px;
-  margin: 50px auto 38px auto;
+  margin: 60px auto 48px auto;
 }
 
-#single_image_for_phones img {
+.single_image_for_phones.watch_image {
+  margin-top: 0px;
+}
+
+.single_image_for_phones img {
   width: 100%;
 }
 
-#single_image_for_phones p {
+.single_image_for_phones p {
   margin: 24px 0 0 0;
   font-size: 14px;
   text-align: center;
@@ -278,7 +282,7 @@ footer {
     }
   }
 
-  #single_image_for_phones {
+  .single_image_for_phones {
     display: none;
   }
 
