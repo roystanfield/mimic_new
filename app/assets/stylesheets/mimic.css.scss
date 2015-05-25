@@ -246,40 +246,11 @@ footer {
     margin: 0 8%;
   }
 
-  body.etsy {
+  body {
     .outside_wrapper { background-color: $etsy-body-color; }
 
     footer a, footer a:visited { color: $etsy-body-color; }
-    footer a:hover {
-      border-bottom: 1px solid $etsy-body-color;
-    }
-  }
-
-  body.fb {
-    .outside_wrapper { background-color: $fb-body-color; }
-
-    footer a, footer a:visited { color: $fb-body-color; }
-    footer a:hover {
-      border-bottom: 1px solid $fb-body-color;
-    }
-  }
-
-  body.capsule {
-    .outside_wrapper { background-color: $capsule-body-color; }
-
-    footer a, footer a:visited { color: $capsule-body-color; }
-    footer a:hover {
-      border-bottom: 1px solid $capsule-body-color;
-    }
-  }
-
-  body.mixel {
-    .outside_wrapper { background-color: $mixel-body-color; }
-
-    footer a, footer a:visited { color: $mixel-body-color; }
-    footer a:hover {
-      border-bottom: 1px solid $mixel-body-color;
-    }
+    footer a:hover { border-bottom: 1px solid $etsy-body-color; }
   }
 
   .single_image_for_phones {
@@ -311,7 +282,7 @@ footer {
   }
 
   #carousel_wrapper .image_wrapper {
-    width: 330px;
+    width: 421px;
     margin: 0 auto;
 
       ul {
