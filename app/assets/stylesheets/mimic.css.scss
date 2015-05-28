@@ -116,6 +116,11 @@ h1 {
   line-height: 42px;
   text-align: center;
   margin-top: 0px;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga", "clig";
+  -ms-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
 }
 
 h3, p {
