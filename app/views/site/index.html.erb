@@ -1,68 +1,57 @@
 <div class="outside_wrapper">
-  <div class="content_wrapper">
 
-    <h1>
-    <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and mobile app designer working for <%= link_to "Etsy", "http://etsy.com/" %> in Brooklyn, NYC.
-    </h1>
+  <h1>
+  <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and mobile app designer working for <%= link_to "Etsy", "http://etsy.com/" %> in Brooklyn, NYC.
+  </h1>
 
-    <section class="single_image_for_phones watch_image">
-      <%= image_tag_with_at2x "/images/etsy_apple_watch_small.png", alt: "Etsy app for Apple Watch" %>
-      <p><%= link_to "Etsy app", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %> for Apple Watch, Etsy 2015</p>
-    </section>
+  <div class="etsy_peeps_image mobile">
+    <%= image_tag_with_at2x "/images/etsy_team_effort_mobile.jpg", alt: "" %>
+  </div>
 
-    <section class="writing">
-        <p>
-          Excited about the device&apos;s impending release, my coworker and I set to work developing <%= link_to "Etsy for Apple Watch", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %>. <!--Proudly, our little Etsy app extension has been an App Store staple since day one.--> It enables Handoff and offers notifications, package tracking, and a recommended items feed for Etsy buyers. At release, we were delighted to be featured on both the App Store and in the new Apple Watch app&apos;s featured section.
-        </p>
+  <div class="etsy_peeps_image desktop">
+    <%= image_tag_with_at2x "/images/etsy_team_effort.jpg", alt: "" %>
+    <div class="caption">A few of my co-workers from Etsy on IPO day</div>
+  </div>
 
-        <section id="carousel_wrapper">
-        
-          <div class="image_wrapper">
-            <ul>
-              <li class="bigger_image_li">
-                <%= image_tag_with_at2x "/images/etsy_apple_watch.png", alt: "Etsy app for Apple Watch" %>
-                <p><%= link_to "Etsy app", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %> for Apple Watch, Etsy 2015</p>
-              </li>
-              <li class="bigger_image_li">
-                <%= image_tag_with_at2x "/images/phone_reader_etsy.png", alt: "Sell on Etsy, an iOS app for Etsy sellers" %>
-                <p><%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8" %> and <%= link_to "The Sell on Etsy Reader", "https://www.etsy.com/reader" %>, Etsy 2014</p>
-              </li>
-            <ul>
-          </div><!-- eo .image_wrapper -->
+  <section class="writing">
+    <div class="content_wrapper">
+      <p> 
+        At Etsy I’ve created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I’ve created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent mobile technologies. The whole experience has highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives. Here’s some of the work.
+      </p>
 
-          <div class="app_icon_wrapper">
-            <ul>
-              <li>
-                <span></span>
-                <%= image_tag_with_at2x "/images/app_icon_apple_watch_etsy.png", alt: "Etsy Apple Watch app icon" %>
-              </li>
-              <li class="last">
-                <span></span>
-                <%= image_tag_with_at2x "/images/app_icon_etsy.png", alt: "Sell on Etsy app icon" %>
-              </li>
-            </ul>
-          </div> <!-- eo .app_icon_wrapper -->
-        </section>
+      <p>
+        Excited about the device&apos;s impending release, my coworker and I set to work developing <%= link_to "Etsy for Apple Watch", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %>. <!--Proudly, our little Etsy app extension has been an App Store staple since day one.--> It enables Handoff and offers notifications, package tracking, and a recommended items feed for Etsy buyers. At release, we were delighted to be featured on both the App Store and in the new Apple Watch app&apos;s featured section.
+      </p>
 
-        <p>
-          In 2014 I designed Etsy&apos;s second native app, <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %>, which launched in six countries. Building on top of that foundation my team and I launched a card reader for both Android and iOS devices that helps sellers make in-person cash and credit card sales. Unlike a Square reader, it is powerfully integrated with an Etsy seller&apos;s shop inventory. Fred Wilson writes about it <%= link_to "here", "http://avc.com/2014/10/feature-friday-etsy-in-real-life/" %>.
-        </p>
+      <div class="apple_watch_image_container desktop">
+        <%= image_tag_with_at2x "/images/etsy_apple_watch_app.jpg", alt: "Etsy for Apple Watch" %>
+        <div class="caption">
+          Screens used for marketing <%= link_to "Etsy for Apple Watch", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %>, 2015. From left to right and top to bottom: Notification, Recommended items glance, Home screen, Orders shipped glance, Order shipped map modal.
+        </div>
+      </div>
 
-        <section class="single_image_for_phones">
-          <%= image_tag_with_at2x "/images/phone_etsy_reader_small.png", alt: "Sell on Etsy, an iOS app for Etsy sellers" %>
-          <p><%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8" %> and <%= link_to "The Sell on Etsy Reader", "https://www.etsy.com/reader" %>, Etsy 2014</p>
-        </section>
+      <div class="apple_watch_image_container mobile">
+        <%= image_tag_with_at2x "/images/etsy_apple_watch_app_mobile.jpg", alt: "Etsy for Apple Watch" %>
+      </div>
 
-        <p>
-          Before Etsy I worked at Mixel, building fun apps for creating, sharing and remixing collages. While there I created designs for the iPad, iPhone and web. On the web side, I implemented my work using Ruby on Rails, Javascript and CSS. <%= link_to "Mixel was acquired by Etsy", "http://allthingsd.com/20130122/etsy-acquires-mixel-for-mobile-team/" %> in January 2013.
-        </p>
-        <p>
-          I start my day jogging to work while wearing a nerdsack. I usually follow this up with an hour of extracurricular iOS programming.
-        </p>
-        <p> 
-          &hellip;And hey, if you see a nice car in the city streets, please add it to <%= link_to "#roysgarage", "https://instagram.com/explore/tags/roysgarage/" %>  on Instagram.
-        </p>
-    </section>
+      <p>
+        In 2014 I designed Etsy&apos;s second native app, <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %>, which launched in six countries. Building on top of that foundation my team and I launched a card reader for both Android and iOS devices that helps sellers make in-person cash and credit card sales. Unlike a Square reader, it is powerfully integrated with an Etsy seller&apos;s shop inventory. Fred Wilson writes about it <%= link_to "here", "http://avc.com/2014/10/feature-friday-etsy-in-real-life/" %>.
+      </p>
 
-  </div><!-- .content_wrapper -->
+      <div class="soe_image_container">
+        <%= image_tag_with_at2x "/images/etsy_soe_card_reader.jpg", alt: "" %>
+        <div class="caption">
+            <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %> and <%= link_to "The Sell on Etsy Reader", "https://www.etsy.com/reader", class: "no_wrap" %>, Etsy 2014
+        </div>
+      </div>
+
+      <p>
+        Before Etsy I worked at Mixel, building fun apps for creating, sharing and remixing collages. While there I created designs for the iPad, iPhone and web. On the web side, I implemented my work using Ruby on Rails, Javascript and CSS. <%= link_to "Mixel was acquired by Etsy", "http://allthingsd.com/20130122/etsy-acquires-mixel-for-mobile-team/" %> in January 2013.
+      </p>
+      <p>
+        I start my day walking to work wearing a nerdsack and listening to audio books. I usually follow this up with an hour of extracurricular iOS programming. &hellip;And hey, if you see a nice car in the city streets, please add it to <%= link_to "#roysgarage", "https://instagram.com/explore/tags/roysgarage/" %>  on Instagram.
+      </p>
+      </div><!-- .content_wrapper -->
+  </section>
+
 </div><!-- .outside_wrapper -->
