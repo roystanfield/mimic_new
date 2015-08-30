@@ -100,6 +100,13 @@ img {
   }
 }
 
+.etsy_peeps_image,
+.apple_watch_image_container,
+.soe_image_container {
+  margin-bottom: 40px;
+}
+
+
 .desktop {
   display: none;
 }
@@ -108,7 +115,7 @@ img {
   margin: 0 8%;
 
   p {
-    margin: 40px auto;
+    margin: 0 auto 40px auto;
   }
 
   .soe_image_container {
@@ -147,6 +154,20 @@ footer {
     display: none;
   }
 
+  .etsy_peeps_image,
+  .apple_watch_image_container,
+  .soe_image_container {
+    margin-bottom: 60px;
+  }
+
+  .apple_watch_image_container {
+
+    img {
+      margin-top: 16px;
+    }
+  }
+
+
   .desktop {
     display: block;
   }
@@ -171,9 +192,10 @@ footer {
   }
 
   .writing {
+
     p {
       width: 600px;
-      margin-bottom: 48px;
+      margin-bottom: 40px;
     }
 
     .soe_image_container {
@@ -182,7 +204,7 @@ footer {
 
       img {
         padding-left: 13%;
-        margin: 16px auto 8px auto;
+        margin: 16px auto 0 auto;
         width: 526px;
       }
     }
@@ -223,7 +245,6 @@ footer {
 
   .writing {
     p {
-      margin-top: 60px;
       margin-bottom: 48px;
     }
 
@@ -274,7 +295,7 @@ footer {
         position: absolute;
         width: 250px;
         text-align: left;
-        bottom: 196px;
+        bottom: 188px;
         right: 16px;
         z-index: 10;
       }
