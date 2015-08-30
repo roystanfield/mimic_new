@@ -90,6 +90,7 @@ img {
 .caption {
   display: none;
   font-size: 0.77rem;
+  line-height: 1.15rem;
   margin-top: 32px;
   text-align: center;
   color: $caption-color;
@@ -273,7 +274,7 @@ footer {
         position: absolute;
         width: 250px;
         text-align: left;
-        bottom: 220px;
+        bottom: 196px;
         right: 16px;
         z-index: 10;
       }
