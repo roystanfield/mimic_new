@@ -28,8 +28,23 @@ img {
   width: 100%;
 }
 
+.border_top {
+  border-top: 1px solid #e1e1e1;
+}
+
 .no_wrap {
   white-space: nowrap;
+}
+
+.writing {
+
+  p.less_margin_bottom {
+    margin-bottom: 24px;
+  }
+
+  ul {
+    padding-left: 40px;
+  }
 }
 
 .outside_wrapper {
@@ -61,13 +76,18 @@ h1 {
   font-feature-settings: "liga", "clig";
 }
 
-p {
+h2, p {
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.6rem;
   color: $body-copy-color-on-color-bg;
   font-family: $body-copy-family;
+}
+
+h2 {
+  margin-bottom: 24px;
+  font-weight: 500px;
 }
 
 ul {
@@ -79,6 +99,7 @@ li {
   font-size: 1rem;
   list-style: none;
   line-height: 1.6rem;
+  font-weight: 300;
   color: $body-copy-color-on-color-bg;
 }
 
@@ -94,6 +115,7 @@ img {
   margin-top: 32px;
   text-align: center;
   color: $caption-color;
+  font-weight: 100;
 
   a {
     color: $caption-color;
@@ -102,8 +124,13 @@ img {
 
 .etsy_peeps_image,
 .apple_watch_image_container,
-.soe_image_container {
+.soe_image_container,
+.portfolio_image_container {
   margin-bottom: 40px;
+}
+
+.portfolio_image_container.hero {
+  margin-top: -12px;
 }
 
 
@@ -114,13 +141,32 @@ img {
 .writing {
   margin: 0 5%;
 
-  p {
+  h2, p {
     margin: 0 auto 40px auto;
+  }
+
+  h2 {
+    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 12px;
+    font-weight: 500;
   }
 
   .soe_image_container {
     width: 80%;
     margin-left: 10%;
+  }
+
+  ul {
+    margin: auto;
+    padding: auto;
+  }
+
+  li {
+    font-size: 1rem;
+    list-style: disc;
+    line-height: 1.6rem;
+    color: $body-copy-color-on-color-bg;
   }
 }
 
@@ -142,7 +188,6 @@ footer {
     &:visited {color: $etsy-body-color;}
   }
 }
-
 
 
 
@@ -178,6 +223,14 @@ footer {
     line-height: 3rem;
   }
 
+  h2 {
+    font-size: 1.22rem;
+    width: 640px;
+    line-height: 2rem;
+    font-style: normal;
+    font-weight: 500;
+  }
+
   p {
     font-size: 1.22rem;
     line-height: 2rem;
@@ -189,13 +242,19 @@ footer {
     width: 540px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 300;
   }
 
   .writing {
 
-    p {
-      width: 600px;
+    h2, p {
+      width: 640px;
       margin-bottom: 40px;
+    }
+
+    h2 {
+      padding-top: 40px;
+      margin-bottom: 12px;
     }
 
     .soe_image_container {
@@ -210,6 +269,27 @@ footer {
     }
   }
 
+  .etsy_kit, .apple_watch {
+    margin-top: 80px;
+  }
+
+  .profile_page {
+
+    .caption {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      width: 640px;
+      margin-bottom: 40px;
+    }
+
+    li {
+      font-size: 1.22rem;
+      line-height: 2rem;
+    }
+}
+
 }
 
 
@@ -223,6 +303,30 @@ footer {
         padding-left: 24%;
       }
     }
+
+    .soe_animation img,
+    .ap_stars_animation img {
+      width: 448px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto
+    }
+
+    .ap_stars_animation img {
+      width: 380px;
+      float: left;
+    }
+
+    img.left_gif {
+      margin-left: 40px;
+      margin-right: 82px;
+    }
+  }
+
+  .side_by_side_caption {
+    clear: left;
+    padding-top: 40px;
   }
 
 }
@@ -302,6 +406,16 @@ footer {
   }
 
 }
+
+// @media only screen and (min-width: 1550px) {
+
+//   .etsy_peeps_image {
+//     width: 1550px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+// }
 
 
 

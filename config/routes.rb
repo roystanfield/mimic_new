@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'portfolio/etsy_native' => 'pages#etsy_native'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
