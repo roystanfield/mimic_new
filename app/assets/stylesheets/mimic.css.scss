@@ -305,7 +305,7 @@ footer {
     }
 
     .soe_animation img,
-    .ap_stars_animation img {
+    .share_ap_animation img {
       width: 448px;
       height: auto;
       display: block;
@@ -313,22 +313,14 @@ footer {
       margin-right: auto
     }
 
-    .ap_stars_animation img {
+    .ap_stars img {
       width: 380px;
-      float: left;
     }
 
-    img.left_gif {
-      margin-left: 40px;
-      margin-right: 82px;
+    .share_ap_animation img {
+      width: 435px;
     }
   }
-
-  .side_by_side_caption {
-    clear: left;
-    padding-top: 40px;
-  }
-
 }
 
 
