@@ -43,7 +43,7 @@ img {
   }
 
   ul {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 }
 
@@ -163,11 +163,24 @@ img {
   }
 
   li {
+    margin-bottom: 12px;
     font-size: 1rem;
     list-style: disc;
     line-height: 1.6rem;
     color: $body-copy-color-on-color-bg;
   }
+}
+
+.soe_intro_animation {
+  max-width: 448px;
+  display: block;
+  margin: 0 auto;
+}
+
+.share_ap_animation img {
+  max-width: 435px;
+  display: block;
+  margin: 0 auto;
 }
 
 footer {
@@ -273,15 +286,12 @@ footer {
     margin-top: 80px;
   }
 
-  .profile_page {
-
-    .caption {
-      margin-bottom: 40px;
-    }
+  .portfolio_page {
 
     ul {
-      width: 640px;
+      width: 600px;
       margin-bottom: 40px;
+      padding-left: 0;
     }
 
     li {
