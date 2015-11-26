@@ -2,12 +2,12 @@
     <h1>Advocating for Native at Etsy</h1>
 
     <div class="portfolio_image_container hero desktop">
-        <%= image_tag_with_at2x "/images/portfolio/product_grid.jpg", alt: "" %>
+        <%= image_tag_with_at2x "/images/portfolio/product_grid.jpg", alt: "Etsy product grid for iPad" %>
         <div class="caption">My first project at Etsy was designing a side-scrolling item grid for buyer profiles in a never-to-be-released version of Etsy for iPad, 2013.</div>
     </div>
 
     <div class="portfolio_image_container hero mobile">
-        <%= image_tag_with_at2x "/images/portfolio/mobile_product_grid.jpg", alt: "" %>
+        <%= image_tag_with_at2x "/images/portfolio/mobile_product_grid.jpg", alt: "Etsy product grid for iPad" %>
     </div>
 
     <section class="writing">
@@ -25,12 +25,15 @@
             <p>
                 Sell on Etsy was one of the most challenging and rewarding projects I&apos;ve worked on to date. Originally the forward-looking vision of a single developer, SoE was meant to create a streamlined process for new users to begin selling on Etsy though a standalone mobile app. 
             </p>
+            <div class="soe_animation portfolio_image_container mobile">
+                <%= image_tag "/images/portfolio/soe_intro_animation.gif", alt: "Prototype of intro animation for Sell on Etsy", class: "soe_intro_animation" %>
+            </div>
             <p>
                 But problems quickly arose. While the initial ideas were terrific in isolation, Etsy &ndash; already a bustling marketplace &ndash; used listings and shops that contain more structured data than the early conception of SoE would support. It seemed that if this version of the app launched, the shops and listings it would produce would have too little data to succeed in the real marketplace. This, along with changes in management and the sea change caused by the introduction of iOS 7, made the launch of SoE seem like an impossibility.
             </p>
 
-            <div class="soe_animation portfolio_image_container">
-                <%= image_tag "/images/portfolio/soe_intro_animation.gif", alt: "Word", class: "soe_intro_animation" %>
+            <div class="soe_animation portfolio_image_container desktop">
+                <%= image_tag "/images/portfolio/soe_intro_animation.gif", alt: "Prototype of intro animation for Sell on Etsy", class: "soe_intro_animation" %>
                 <div class="caption">
                     Intro animation prototype created in Xcode, 2013.
                 </div>
@@ -39,14 +42,14 @@
                 Clearly we needed to change SoE in a fundamental way. I began talking to the VP of engineering, the director of mobile, and my design manager trying to figure out how we could save the app. After a month or two of conversation we decided to re-cast the app as a set of seller tools for already established Etsy sellers. We invited the developer to NYC and had soon convinced him of the idea as well.
             </p>
             <div class="portfolio_image_container desktop">
-                <%= image_tag_with_at2x "/images/portfolio/soe.jpg", alt: "Word" %>
+                <%= image_tag_with_at2x "/images/portfolio/soe.jpg", alt: "Various screens from Sell on Etsy" %>
                 <div class="caption">
                     <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %> and <%= link_to "The Sell on Etsy Reader", "https://www.etsy.com/reader", class: "no_wrap" %>, 2014. L to R: Intro screen by Etsy Brand Studio, Reviews, Stats, SoE icon, Etsy Card Reader, Listings, Individual listing.
                 </div>
             </div>
 
             <div class="portfolio_image_container mobile">
-                <%= image_tag_with_at2x "/images/portfolio/mobile_soe.jpg", alt: "Word" %>
+                <%= image_tag_with_at2x "/images/portfolio/mobile_soe.jpg", alt: "Various screens from Sell on Etsy" %>
             </div>
             <p>
                 We redesigned and developed the whole app in 3 months, removing onboarding but adding push notifications, a dashboard, stats, listing management, order screens, convos, reviews, and numerous settings screens. Having recreated most of Etsy's seller tools our team of 6 launched Sell on Etsy in early 2014. A different team followed up this release with an Android version just 2 months later. Sellers love SoE and report using it every day to manage their shops. 
@@ -57,23 +60,25 @@
                 We knew that many of our sellers were using other payment solutions when selling in person, and this was causing them to create two sets of inventory &ndash; one in our system and one for whichever other system they were using for in-person sales. By creating our own card reader Etsy sellers would be able to use their Etsy inventory exclusively when selling in person. Fred Wilson writes about this idea and more <%= link_to "here", "http://avc.com/2014/10/feature-friday-etsy-in-real-life/" %>.
             </p>
             <div class="portfolio_image_container desktop">
-                <%= image_tag_with_at2x "/images/portfolio/card_reader_software.png", alt: "Word" %>
+                <%= image_tag_with_at2x "/images/portfolio/card_reader_software.png", alt: "In-person payments software for Sell on Etsy" %>
                 <div class="caption">
                     In-person payments software for Sell on Etsy, 2014. L to R: Animated modal presentation of in-person mode, full in-person cart. Bottom: signature screen. 
                 </div>
             </div>
 
-            <div class="portfolio_image_container mobile">
-                <%= image_tag_with_at2x "/images/portfolio/mobile_card_reader_software.jpg", alt: "Word" %>
-            </div>
             <p>
                 Over the course of several months I designed software for both iOS and Android that would enable credit card swiping, manual entry, cash entry, discounts, and practice swiping. 
             </p>
+
+            <div class="portfolio_image_container mobile">
+                <%= image_tag_with_at2x "/images/portfolio/mobile_card_reader_software.jpg", alt: "In-person payments software for Sell on Etsy" %>
+            </div>
+
             <p>
                 Also, this was Etsy's first attempt at creating a physical product, and we treated the card reader as a special item by adding a locally sourced, reusable holder/base made from recycled materials. I advised for this part of project as well.
             <p>
             <div class="portfolio_image_container">
-                <%= image_tag_with_at2x "/images/portfolio/card_reader_packaging.jpg", alt: "Word" %>
+                <%= image_tag_with_at2x "/images/portfolio/card_reader_packaging.jpg", alt: "Etsy Card Reader and packaging" %>
                 <div class="caption">
                     Etsy Card Reader and packaging, 2014.
                 </div>
@@ -85,14 +90,14 @@
             </p>
 
             <div class="etsy_kit portfolio_image_container desktop">
-                <%= image_tag_with_at2x "/images/portfolio/etsykit_01.jpg", alt: "#" %>
+                <%= image_tag_with_at2x "/images/portfolio/etsykit_01.jpg", alt: "Various screens from the EtsyKit demo app" %>
                 <div class="caption">
                     EtsyKit demo app, 2015. Top row: color selector and half-modal for code view; listing card patterns. Bottom row: the universal app displays a menu and content when reoriented to landscape, 2015.
                 </div>
             </div>
 
             <div class="etsy_kit portfolio_image_container mobile">
-                <%= image_tag_with_at2x "/images/portfolio/mobile_etsykit_01.jpg", alt: "#" %>
+                <%= image_tag_with_at2x "/images/portfolio/mobile_etsykit_01.jpg", alt: "Various screens from the EtsyKit demo app" %>
             </div>
             <p>
                 Before EtsyKit, the native apps were a hodgepodge of different visual elements and coding styles. This made both visual QA and development tedious and error prone. A staff engineer asked me to assist him in creating canonical patterns as well as design the demo app. Though this was not my main project at the time, I jumped at the chance. EtsyKit is now used in the development of all iOS features.
@@ -119,7 +124,7 @@
             </p>
 
             <div class="share_ap_animation portfolio_image_container">
-                <%= image_tag "/images/portfolio/ap_share.gif", alt: "#" %>
+                <%= image_tag "/images/portfolio/ap_share.gif", alt: "An animated popup for the appreciation photos project" %>
                 <div class="caption">
                   Post review animated popup to convey the value of sharing an appreciation photo on social media, 2015.
                 </div>
@@ -134,7 +139,7 @@
                I remember working on iOS apps when the App Store was still fairly empty; it gave my clients easy discoverability. Not only was a new device class from Apple too attractive to ignore but the prospect of a nearly empty launch day App Store section made creating an app for the soon to be launched Apple Watch a no-brainier. When I noticed Mike, a crackerjack iOS developer, experimenting with the pre-release SDK, I knew I had a partner! I created rough mockups that night and we commisioned a 3D-printed Apple Watch so that we could feel out the new device without actually having access to one.
             </p>
             <div class="portfolio_image_container">
-                <%= image_tag_with_at2x "/images/portfolio/apple_watch_3d_print.jpg", alt: "Word" %>
+                <%= image_tag_with_at2x "/images/portfolio/apple_watch_3d_print.jpg", alt: "3D printed Apple Watch prototype" %>
                 <div class="caption">
                     3D printed Apple Watch used to get a feeling for the device and mockups, 2014.
                 </div>
@@ -167,21 +172,21 @@
             </p>
 
             <div class="portfolio_image_container">
-                <%= image_tag_with_at2x "/images/portfolio/apple_tv_01.jpg", alt: "#" %>
+                <%= image_tag_with_at2x "/images/portfolio/apple_tv_01.jpg", alt: "Etsy for Apple TV" %>
                 <div class="caption">
                   Proposed home screen, 2015.
                 </div>
             </div>
 
             <div class="portfolio_image_container">
-                <%= image_tag_with_at2x "/images/portfolio/apple_tv_02.jpg", alt: "#", class: "desktop" %>
+                <%= image_tag_with_at2x "/images/portfolio/apple_tv_02.jpg", alt: "Etsy for Apple TV", class: "desktop" %>
                 <div class="caption">
                   Proposed home screen with focus farther down the screen, 2015.
                 </div>
             </div>
 
             <div class="portfolio_image_container">
-                <%= image_tag_with_at2x "/images/portfolio/apple_tv_03.jpg", alt: "#" %>
+                <%= image_tag_with_at2x "/images/portfolio/apple_tv_03.jpg", alt: "Etsy for Apple TV" %>
                 <div class="caption">
                   App search, which we want to integrate with higher-level TV search, 2015.
                 </div>
