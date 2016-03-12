@@ -261,6 +261,10 @@ footer {
 
   .writing {
 
+    .temporary_note {
+      margin-bottom: 64px;
+    }
+
     h2, p {
       width: 640px;
       margin-bottom: 40px;
@@ -342,7 +346,7 @@ footer {
 
   h1 {
     width: 900px;
-    margin: 72px auto;
+    margin: 72px auto 64px auto;
   }
 
   .content_wrapper {

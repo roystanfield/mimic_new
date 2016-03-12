@@ -1,8 +1,17 @@
 <div class="outside_wrapper">
 
   <h1>
-  <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and mobile app designer working for <%= link_to "Etsy", "http://etsy.com/" %> in Brooklyn, NYC.
+  <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and mobile app designer working for <%= link_to "Airbnb", "https://www.airbnb.com/" %> in <span class="no_wrap">San Francisco, California</span>.
   </h1>
+
+  <section class="writing">
+    <div class="content_wrapper">
+      <p class="temporary_note"> 
+        Hi, I'm in the midst of a transition &ndash; saying goodbye to <%= link_to "Etsy", "https://www.etsy.com/" %> (where I enjoyed 3.5 very productive years) and saying hello to my new coworkers at <%= link_to "Airbnb", "https://www.airbnb.com/" %>. Right now I&apos;m feverishly packing up in Brooklyn and will soon be trucking it out to <span class="no_wrap">San Francisco</span>. You can find some of my Etsy work below. Cheers!
+<!--         <span class="short_line">&nbsp;</span> -->
+      </p>
+    </div>
+  </section>
 
   <div class="etsy_peeps_image mobile">
     <%= image_tag_with_at2x "/images/etsy_team_effort_mobile.jpg", alt: "" %>
@@ -15,6 +24,7 @@
 
   <section class="writing">
     <div class="content_wrapper">
+
       <p> 
         At Etsy I’ve created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I’ve created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent mobile technologies. The whole experience has highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives. Here’s some of the work.
       </p>
