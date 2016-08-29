@@ -5,8 +5,8 @@ $caption-color: #999;
 $li-color: #222;
 $anchor-link-color: #222;
 $footer-link-color: #222;
-$body-copy-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Light", "Helvetica", Arial, sans-serif;
-$headlines-family: "proxima-nova", "Helvetica Neue Light", "Helvetica Light", "Helvetica", Arial, sans-serif;
+$body-copy-family: "proxima-nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$headlines-family: "proxima-nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 
 $body-copy-color-on-color-bg: #222;
 $anchor-link-color-on-color-bg: #222;
@@ -63,7 +63,7 @@ h1 {
   margin: 40px auto;
   padding: 0 4%;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 800;
   font-family: $headlines-family;
   color: $headline-color;
   font-size: 1.4rem;
@@ -123,6 +123,7 @@ img {
 }
 
 .etsy_peeps_image,
+.dls_image,
 .apple_watch_image_container,
 .soe_image_container,
 .portfolio_image_container {
@@ -214,9 +215,14 @@ footer {
   }
 
   .etsy_peeps_image,
+  .dls_image,
   .apple_watch_image_container,
   .soe_image_container {
     margin-bottom: 60px;
+  }
+
+  .dls_image {
+    padding-top: 16px;
   }
 
   .apple_watch_image_container {
@@ -381,11 +387,11 @@ footer {
     li {
       float: left;
       padding: 7px 32px;
-      font-size: 0.88rem;
+      font-size: 0.77rem;
     }
 
     li.first {
-      margin-left: 180px;
+      margin-left: 270px;
     }
   }
 
@@ -413,16 +419,6 @@ footer {
   }
 
 }
-
-// @media only screen and (min-width: 1550px) {
-
-//   .etsy_peeps_image {
-//     width: 1550px;
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-
-// }
 
 
 

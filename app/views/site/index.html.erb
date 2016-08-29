@@ -1,32 +1,52 @@
 <div class="outside_wrapper">
 
   <h1>
-  <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and native app designer working for <%= link_to "Airbnb", "https://www.airbnb.com/" %> in <span class="no_wrap">San Francisco, California</span>.
+  <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is a web and native app designer working for <%= link_to "Airbnb", "https://www.airbnb.com/" %>, in <span class="no_wrap">San Francisco</span>.
   </h1>
 
+    <section class="writing">
+      <div class="content_wrapper">
+
+        <p> 
+          I work on Airbnb&#39;s <%= link_to "Design Language System", "http://airbnb.design/the-way-we-build/" %> team (DLS). Our small collaborative group blends product team knowledge and in-house art direction into a singular set of reusable components.
+        </p>
+      </div>
+    </section>
+
+  <div class="dls_image mobile">
+    <%= image_tag_with_at2x "/images/airbnb_dls_components_sample_mobile.png", alt: "" %>
+    <div class="caption">Many designers and developers have contributed to the DLS components seen above.</div>
+  </div>
+
+  <div class="dls_image desktop">
+    <%= image_tag_with_at2x "/images/airbnb_dls_components_sample.png", alt: "" %>
+    <div class="caption">Many designers and developers have contributed to the DLS components seen above.</div>
+  </div>
+
   <section class="writing">
     <div class="content_wrapper">
-      <p class="temporary_note"> 
-        Hi, I'm in the midst of a transition &ndash; saying goodbye to <%= link_to "Etsy", "https://www.etsy.com/" %> (where I enjoyed 3.5 very productive years) and saying hello to my new coworkers at <%= link_to "Airbnb", "https://www.airbnb.com/" %>. Right now I&apos;m feverishly packing up in Brooklyn and will soon be trucking it out to <span class="no_wrap">San Francisco</span>. You can find some of my Etsy work below. Cheers!
-<!--         <span class="short_line">&nbsp;</span> -->
+        <p> 
+          We strive to eliminate platform specificity in our components so that Airbnb&#39;s UI is as similar as possible across Android, iOS, React Native and responsive web. This way a designer can create for just one platform and in a single device size (mobile first) while still being certain that their design will perform on all platforms.
       </p>
-    </div>
-  </section>
+      <p>
+        These same benefits extend to Airbnb&#39;s engineers who use DLS components to quickly assemble front-end code. And since platform specificity has been reduced our React Native features require very little fuss to run in both Android and iOS.
+      </p>
 
-  <div class="etsy_peeps_image mobile">
-    <%= image_tag_with_at2x "/images/etsy_team_effort_mobile.jpg", alt: "" %>
-  </div>
+      <div class="etsy_peeps_image mobile">
+        <%= image_tag_with_at2x "/images/etsy_team_effort_mobile.jpg", alt: "" %>
+        <div class="caption">A few of my co-workers from Etsy on IPO day</div>
+      </div>
+      
+      <div class="etsy_peeps_image desktop">
+        <%= image_tag_with_at2x "/images/etsy_team_effort.jpg", alt: "" %>
+        <div class="caption">A few of my co-workers from Etsy on IPO day</div>
+      </div>
 
-  <div class="etsy_peeps_image desktop">
-    <%= image_tag_with_at2x "/images/etsy_team_effort.jpg", alt: "" %>
-    <div class="caption">A few of my co-workers from Etsy on IPO day</div>
-  </div>
-
-  <section class="writing">
-    <div class="content_wrapper">
-
+      <p>
+        Before Airbnb, I worked at Etsy in Brooklyn, New York. While there I created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent mobile technologies. The whole experience highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives. Here&#39;s some of that work.
+      </p>
       <p> 
-        At Etsy I’ve created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I’ve created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent mobile technologies. The whole experience has highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives. Here’s some of the work.
+        At Etsy I&#39;ve created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I’ve created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent mobile technologies. The whole experience has highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives. Here’s some of the work.
       </p>
 
       <p>
@@ -59,7 +79,7 @@
         Before Etsy I worked at Mixel, building fun apps for creating, sharing and remixing collages. While there I created designs for the iPad, iPhone and web. On the web side, I implemented my work using Ruby on Rails, Javascript and CSS. <%= link_to "Mixel was acquired by Etsy", "http://allthingsd.com/20130122/etsy-acquires-mixel-for-mobile-team/" %> in January 2013.
       </p>
       <p>
-        I start my day walking to work wearing a nerdsack and listening to audio books. I usually follow this up with an hour of extracurricular iOS programming. &hellip;And hey, if you see a nice car in the city streets, please add it to <%= link_to "#roysgarage", "https://instagram.com/explore/tags/roysgarage/" %>  on Instagram.
+        I start my day changing diapers and playing with <%= link_to "this guy", "https://www.instagram.com/p/BJDlOpFguj3/?taken-by=roystanfield" %>! I&#39;m always looking to rejuvinate my iOS coding ability, but in the near term I&#39;ll be focusing on React. &hellip;And hey, if you see a nice car in the city streets, please add it to <%= link_to "#roysgarage", "https://instagram.com/explore/tags/roysgarage/" %>  on Instagram.
       </p>
       </div><!-- .content_wrapper -->
   </section>
