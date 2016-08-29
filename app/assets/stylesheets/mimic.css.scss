@@ -78,7 +78,7 @@ h1 {
 
 h2, p {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 1.6rem;
   color: $body-copy-color-on-color-bg;
@@ -87,7 +87,7 @@ h2, p {
 
 h2 {
   margin-bottom: 24px;
-  font-weight: 500px;
+  font-weight: 400px;
 }
 
 ul {
@@ -99,7 +99,7 @@ li {
   font-size: 1rem;
   list-style: none;
   line-height: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
   color: $body-copy-color-on-color-bg;
 }
 
@@ -115,7 +115,7 @@ img {
   margin-top: 32px;
   text-align: center;
   color: $caption-color;
-  font-weight: 100;
+  font-weight: 400;
 
   a {
     color: $caption-color;
@@ -352,7 +352,7 @@ footer {
 
   h1 {
     width: 900px;
-    margin: 72px auto 64px auto;
+    margin: 64px auto 56px auto;
   }
 
   .content_wrapper {
