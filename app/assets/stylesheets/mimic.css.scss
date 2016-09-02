@@ -62,13 +62,13 @@ a {
 
 h1 {
   margin: 32px auto;
-  padding: 0 32px;
+  padding: 0 24px;
   font-style: normal;
   font-weight: 600;
   font-family: $headlines-family;
   color: $headline-color;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga", "clig";
   -ms-font-feature-settings: "liga", "clig";
@@ -84,8 +84,8 @@ h1 {
 h2, p {
   font-style: normal;
   font-weight: 400;
-  font-size: 0.88rem;
-  line-height: 1.48rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
   color: $body-copy-color;
   font-family: $body-copy-family;
 }
@@ -145,7 +145,7 @@ img {
 }
 
 .writing {
-  margin: 0 32px;
+  margin: 0 24px;
 
   h2, p {
     margin: 0 auto 32px auto;
@@ -197,7 +197,7 @@ footer {
 
   li {
     font-size: .88rem;
-    padding: 7px 32px;
+    padding: 7px 24px;
   }
 
   a {
