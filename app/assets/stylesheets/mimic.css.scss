@@ -1,5 +1,6 @@
 $body-color: #fff;
 $headline-color: #222;
+$headline-anchor-link-color: #222;
 $body-copy-color: #555;
 $caption-color: #999;
 $li-color: #222;
@@ -66,20 +67,25 @@ h1 {
   font-weight: 600;
   font-family: $headlines-family;
   color: $headline-color;
-  font-size: 1.6rem;
-  line-height: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga", "clig";
   -ms-font-feature-settings: "liga", "clig";
   -webkit-font-feature-settings: "liga", "clig";
   font-feature-settings: "liga", "clig";
+
+  a {
+    color: $headline-anchor-link-color;
+    &:visited {color: $headline-anchor-link-color;}
+  }
 }
 
 h2, p {
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.88rem;
-  line-height: 1.7rem;
+  line-height: 1.48rem;
   color: $body-copy-color;
   font-family: $body-copy-family;
 }
@@ -254,7 +260,9 @@ footer {
 
   p {
     margin-bottom: 48px; 
+    font-weight: 300;
     font-size: 1rem;
+    line-height: 1.7rem;
   }
 
   .caption {
