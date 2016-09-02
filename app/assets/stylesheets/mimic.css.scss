@@ -1,12 +1,12 @@
 $body-color: #fff;
 $headline-color: #222;
-$body-copy-color: #222;
+$body-copy-color: #555;
 $caption-color: #999;
 $li-color: #222;
-$anchor-link-color: #222;
+$anchor-link-color: #555;
 $footer-link-color: #222;
-$body-copy-family: "proxima-nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-$headlines-family: "proxima-nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+$body-copy-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+$headlines-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 
 $body-copy-color-on-color-bg: #222;
 $anchor-link-color-on-color-bg: #222;
@@ -52,23 +52,22 @@ img {
 }
 
 a {
-  color: $anchor-link-color-on-color-bg;
+  color: $anchor-link-color;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0 , 0.15);
   &:hover {border-bottom: 1px solid rgba(0, 0, 0 , 0.8);}
-  &:visited {color: $anchor-link-color-on-color-bg;}
+  &:visited {color: $anchor-link-color;}
 }
 
 h1 {
-  margin: 40px auto;
-  padding: 0 4%;
+  margin: 32px auto;
+  padding: 0 32px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-family: $headlines-family;
   color: $headline-color;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2rem;
-  text-align: center;
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga", "clig";
   -ms-font-feature-settings: "liga", "clig";
@@ -78,10 +77,10 @@ h1 {
 
 h2, p {
   font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  color: $body-copy-color-on-color-bg;
+  font-weight: 300;
+  font-size: 0.88rem;
+  line-height: 1.7rem;
+  color: $body-copy-color;
   font-family: $body-copy-family;
 }
 
@@ -140,10 +139,10 @@ img {
 }
 
 .writing {
-  margin: 0 5%;
+  margin: 0 32px;
 
   h2, p {
-    margin: 0 auto 40px auto;
+    margin: 0 auto 32px auto;
   }
 
   h2 {
@@ -193,7 +192,7 @@ footer {
   li {
     text-align: center;
   //   float: left;
-    font-size: 1rem;
+    font-size: .88rem;
     padding: 7px 32px;
   }
 
@@ -221,7 +220,8 @@ footer {
     margin-bottom: 60px;
   }
 
-  .dls_image {
+  .dls_image,
+  .etsy_peeps_image {
     padding-top: 16px;
   }
 
@@ -241,6 +241,7 @@ footer {
     margin: 48px auto;
     font-size: 2.44rem;
     line-height: 3rem;
+    text-align: center;
   }
 
   h2 {
@@ -252,9 +253,8 @@ footer {
   }
 
   p {
-    font-size: 1.22rem;
-    line-height: 2rem;
     margin-bottom: 48px; 
+    font-size: 1rem;
   }
 
   .caption {
