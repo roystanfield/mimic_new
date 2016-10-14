@@ -1,27 +1,28 @@
 $body-color: #fff;
 $headline-color: #222;
 $headline-anchor-link-color: #222;
-$body-copy-color: #555;
-$caption-color: #999;
-$li-color: #222;
-$anchor-link-color: #555;
-$footer-link-color: #222;
+$body-copy-color: #222;
+$anchor-link-color: #222;
 $body-copy-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
-$headlines-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+$headlines-family: Georgia, Times, "Times New Roman", serif;
 
-$body-copy-color-on-color-bg: #222;
-$anchor-link-color-on-color-bg: #222;
 
-$etsy-body-color: #fff;
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+$box-shadow-1: 0 2px 10px 3px rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0 4px 15px 3px rgba(0, 0, 0, 0.1);
+$box-shadow-3: 0 6px 20px 3px rgba(0, 0, 0, 0.1);
+$box-shadow-4: 0 8px 30px 3px rgba(0, 0, 0, 0.1);
 
 
 html {
   font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: $body-color;
   font-family: $body-copy-family;
 }
 
@@ -29,413 +30,136 @@ img {
   width: 100%;
 }
 
-.border_top {
-  border-top: 1px solid #e1e1e1;
+a:link {
+  color: $anchor-link-color;
+  text-decoration: none;
+  border-bottom: 1px solid $anchor-link-color;
 }
+
+h1 a:link {
+  border-bottom-width: 2px;
+}
+
+ul a:link {
+  border-bottom: none;
+}
+
+a:visited {
+  color: $anchor-link-color;
+}
+
+a:hover {
+  color: #555;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 0.76rem;
+  padding-bottom: 4px;
+}
+
+header {
+  margin: 40px 0;
+}
+
+p {
+  font-size: 0.94rem;
+  line-height: 1.4rem;
+  margin: 0;
+}
+
+.next_p {
+  margin-top: 32px;
+}
+
+h1 {
+  font-family: $headlines-family;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 0.63rem;
+  text-transform: uppercase;
+  margin: 40px 0 0 0;
+  padding-bottom: 6px;
+  letter-spacing: 1px;
+  color: $headline-color;
+} 
 
 .no_wrap {
   white-space: nowrap;
 }
 
-.writing {
-
-  p.less_margin_bottom {
-    margin-bottom: 24px;
-  }
-
-  ul {
-    padding-left: 20px;
-  }
-}
-
 .outside_wrapper {
-  background: $etsy-body-color;
-}
-
-a {
-  color: $anchor-link-color;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0 , 0.15);
-  &:hover {border-bottom: 1px solid rgba(0, 0, 0 , 0.8);}
-  &:visited {color: $anchor-link-color;}
-}
-
-h1 {
-  margin: 32px auto 24px auto;
-  padding: 0 24px;
-  font-style: normal;
-  font-weight: 600;
-  font-family: $headlines-family;
-  color: $headline-color;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-variant-ligatures: common-ligatures;
-  -moz-font-feature-settings: "liga", "clig";
-  -ms-font-feature-settings: "liga", "clig";
-  -webkit-font-feature-settings: "liga", "clig";
-  font-feature-settings: "liga", "clig";
-
-  a {
-    color: $headline-anchor-link-color;
-    &:visited {color: $headline-anchor-link-color;}
-  }
-}
-
-h2, p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.95rem;
-  line-height: 1.6rem;
-  color: $body-copy-color;
-  font-family: $body-copy-family;
-}
-
-h2 {
-  margin-bottom: 24px;
-  font-weight: 400px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  font-size: 1rem;
-  list-style: none;
-  line-height: 1.6rem;
-  font-weight: 400;
-  color: $body-copy-color-on-color-bg;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.caption {
-  display: none;
-  font-size: 0.77rem;
-  line-height: 1.15rem;
-  margin-top: 32px;
-  text-align: center;
-  color: $caption-color;
-  font-weight: 400;
-
-  a {
-    color: $caption-color;
-  }
-}
-
-.etsy_peeps_image,
-.dls_image,
-.apple_watch_image_container,
-.soe_image_container,
-.portfolio_image_container {
-  margin-bottom: 40px;
-}
-
-.portfolio_image_container.hero {
-  margin-top: -12px;
-}
-
-
-.desktop {
-  display: none;
-}
-
-.writing {
-  margin: 0 24px;
-
-  h2, p {
-    margin: 0 auto 32px auto;
-  }
-
-  h2 {
-    margin-top: 40px;
-    padding-top: 40px;
-    margin-bottom: 12px;
-    font-weight: 500;
-  }
-
-  .soe_image_container {
-    width: 80%;
-    margin-left: 10%;
-  }
-
-  ul {
-    margin: auto;
-    padding: auto;
-  }
-
-  li {
-    margin-bottom: 12px;
-    font-size: 1rem;
-    list-style: disc;
-    line-height: 1.6rem;
-    color: $body-copy-color-on-color-bg;
-  }
-}
-
-.soe_intro_animation {
-  max-width: 448px;
-  display: block;
-  margin: 0 auto;
-}
-
-.share_ap_animation img {
-  width: 85%;
-  max-width: 435px;
-  display: block;
-  margin: 0 auto;
+  margin: 32px;
 }
 
 footer {
-  background-color: #000;
-  padding: 32px 0 32px 0;
-  margin-top: 64px;
-
-  li {
-    font-size: .88rem;
-    padding: 7px 24px;
-  }
-
-  a {
-    color: $etsy-body-color;
-    &:hover {border-bottom: none;}
-    &:visited {color: $etsy-body-color;}
-  }
+  height: 96px;
 }
-
-
-
-
 
 @media only screen and (min-width: 680px) {
 
-  .mobile {
-    display: none;
+  
+  html {
+    font-weight: 300;
   }
 
-  .etsy_peeps_image,
-  .dls_image,
-  .apple_watch_image_container,
-  .soe_image_container {
-    margin-bottom: 60px;
-  }
-
-  .dls_image,
-  .etsy_peeps_image {
-    padding-top: 16px;
-  }
-
-  .apple_watch_image_container {
-
-    img {
-      margin-top: 16px;
-    }
-  }
-
-
-  .desktop {
-    display: block;
-  }
+  header {
+    margin: -16px 0 32px 0;
+  } 
 
   h1 {
-    margin: 48px auto;
-    font-size: 2.44rem;
-    line-height: 3rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 1.22rem;
-    width: 640px;
-    line-height: 2rem;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 2.23rem;
+    line-height: 3.1rem;
+    clear: right;
+    padding: 80px 0;
   }
 
   p {
-    margin-bottom: 48px; 
-    font-weight: 300;
     font-size: 1rem;
     line-height: 1.7rem;
+    margin: 0;
   }
 
-  .caption {
-    display: block;
-    width: 540px;
+  ul {
+    float: right;
+    text-align: right;
+  }
+
+  li {
+    float: left;
+    margin-right: 24px;
+  }
+
+  li.last {
+    margin-right: 0;
+  }
+
+  .writing {
+    width: 600px;
+  }
+
+}
+
+
+@media only screen and (min-width: 934px) {
+
+  .outside_wrapper {
+    width: 870px;
     margin-left: auto;
     margin-right: auto;
-    font-weight: 300;
   }
 
   .writing {
-
-    .temporary_note {
-      margin-bottom: 64px;
-    }
-
-    h2, p {
-      width: 640px;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      padding-top: 40px;
-      margin-bottom: 12px;
-    }
-
-    .soe_image_container {
-      margin-left: 0%;
-      width: auto;
-
-      img {
-        padding-left: 17%;
-        margin: 16px auto 0 auto;
-        width: 475px;
-      }
-    }
+    margin-left: 14%;
   }
-
-  .etsy_kit, .apple_watch {
-    margin-top: 80px;
-  }
-
-  .portfolio_page {
-
-    ul {
-      width: 600px;
-      margin-bottom: 40px;
-      padding-left: 0;
-    }
-
-    li {
-      font-size: 1.22rem;
-      line-height: 2rem;
-    }
+ 
 }
-
-}
-
-
-@media only screen and (min-width: 840px) {
-
-  .writing {
-
-    .soe_image_container {
-
-      img {
-        padding-left: 24%;
-      }
-    }
-
-    .soe_animation img,
-    .share_ap_animation img {
-      width: 448px;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto
-    }
-
-    .ap_stars img {
-      width: 380px;
-    }
-
-    .share_ap_animation img {
-      width: 435px;
-    }
-  }
-}
-
-
-
-
-
-@media only screen and (min-width: 1044px) {
-
-  h1 {
-    width: 900px;
-    margin: 64px auto 56px auto;
-  }
-
-  .content_wrapper {
-    width: 900px;
-    margin: 0 auto;
-  }
-
-  .writing {
-    p {
-      margin-bottom: 48px;
-    }
-
-    .soe_image_container {
-      margin-top: 8px;
-
-      img {
-        padding-left: 236px;
-      }
-    }
-  }
-
-  footer {
-    margin-top: 128px;
-    height: 120px;
-
-    ul {
-      width: 980px;
-      margin: 46px auto;
-    }
-
-    li {
-      float: left;
-      padding: 7px 32px;
-      font-size: 0.77rem;
-    }
-
-    li.first {
-      margin-left: 270px;
-    }
-  }
-
-
-}
-
-@media only screen and (min-width: 1140px) {
-
-  .writing {
-
-    .apple_watch_image_container {
-      position: relative;
-      margin-top: 60px;
-      margin-bottom: 76px;
-
-      .caption {
-        position: absolute;
-        width: 250px;
-        text-align: left;
-        bottom: 188px;
-        right: 16px;
-        z-index: 10;
-      }
-    }
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,84 +1,52 @@
 <div class="outside_wrapper">
 
+  <header>
+    <ul>
+      <li class="first"><%= link_to "Twitter", "https://twitter.com/RoyStanfield"%></li>
+      <li><%= link_to "Instagram", "http://instagram.com/roystanfield" %></li>
+      <li class="last"><%= mail_to "roystanfield@gmail.com"%></li>
+    </ul>
+  </header>
+
   <h1>
-  <%= mail_to "roystanfield@gmail.com", "Roy Stanfield" %> is an app designer working for <%= link_to "Airbnb", "https://www.airbnb.com/" %>, in <span class="no_wrap">San Francisco</span>
+    Roy Stanfield is a web and native app designer working for <%= link_to "Airbnb", "https://www.airbnb.com/" %>, in <span class="no_wrap">San Francisco</span>
   </h1>
 
-    <section class="writing">
-      <div class="content_wrapper">
-
-        <p> 
-          I work on Airbnb&#39;s <%= link_to "Design Language System", "http://airbnb.design/the-way-we-build/" %> team (DLS). Our small collaborative group blends product team knowledge and in-house art direction into a singular set of reusable components.
-        </p>
-      </div>
-    </section>
-
-  <div class="dls_image mobile">
-    <%= image_tag_with_at2x "/images/airbnb_dls_components_sample_mobile.png", alt: "" %>
-    <div class="caption">Many designers and developers have contributed components to the DLS library.</div>
-  </div>
-
-  <div class="dls_image desktop">
-    <%= image_tag_with_at2x "/images/airbnb_dls_components_sample.png", alt: "" %>
-    <div class="caption">Many designers and developers have contributed components to the DLS library.</div>
-  </div>
-
   <section class="writing">
-    <div class="content_wrapper">
-      <p> 
-        We strive to eliminate platform specificity in our components so that Airbnb&#39;s UI is as similar as possible across Android, iOS, and responsive web. This way a designer can create for just one platform and in a single device size (mobile first) while still being certain that their design will perform on all platforms. These same benefits extend to Airbnb&#39;s engineers who use DLS components to quickly assemble front-end code. And since platform specificity has been reduced our React Native features require very little fuss to run in both Android and iOS.
-      </p>
-      <p>
-        Before Airbnb, I worked at Etsy in Brooklyn. While there I created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent mobile technologies. The whole experience highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives.
-      </p>
-      </div>
+
+    <p>
+      I work on Airbnb&apos;s Design Language System team (DLS). Our small collaborative group blends product team knowledge and in-house art direction into a singular set of reusable components.
+    </p>
+    
+    <h2>Airbnb&apos;s design language system</h2>
+    <p>
+      On the DLS team we strive to eliminate platform specificity in our components so that Airbnb&apos;s UI is as similar as possible across Android, iOS, and responsive web. This way a designer can create for just one platform and in a single device size (mobile first) while still being certain that their design will perform on all platforms. These same benefits extend to Airbnb&apos;s developers who use DLS components to quickly assemble front-end code. And since platform specificity has been reduced our React Native features require very little fuss to run in both Android and iOS.
+    </p>
+
+    <h2>While at Etsy (2012-2016)</h2>
+    <p>
+      Before Airbnb, I worked at Etsy in Brooklyn. While there I created designs for iOS, Android and the responsive web, and worked with teams that prioritize testing and user research to make product decisions. Along the way I created mockups, designed with code and prototyped animations all while advocating for Etsy to embrace emergent native technologies. The whole experience highlighted the importance of eliminating barriers between designers, engineers, product managers, product marketing managers and executives.
+    </p>
+
+    <p class="next_p">
+      At Etsy I am proud to have redesigned Etsy sellers&apos;s shop home and admin experience on the native and web apps, to have co-created the Sell on Etsy app, pushed for Etsy to become an Apple Watch launch partner, and to have advocated for Etsy on an Apple TV.
+    </p>
+
+    <h2>Personal projects</h2>
+    <p>
+      I&apos;m currently learning React and brushing up on ES6 in the mornings, and I&apos;ve recenly finished an exploratory redesign of Apple’s Remote app &ndash; that integrates Siri and new social annotation features with Apple TV and iTunes media. 
+    </p>
+
+    <p class="next_p">
+      I&apos;m a proud father and start my day changing diapers and riding my bike to work. Hey, if you see a nice car in the city streets, please add it to <a href="https://www.instagram.com/explore/tags/roysgarage/">#roysgarage</a> on <a href="https://www.instagram.com/roystanfield/">Instagram</a>. 
+    </p>
+
   </section>
 
-      <div class="etsy_peeps_image mobile">
-        <%= image_tag_with_at2x "/images/etsy_team_effort_mobile.jpg", alt: "" %>
-        <div class="caption">A few of my co-workers from Etsy on IPO day</div>
-      </div>
-      
-      <div class="etsy_peeps_image desktop">
-        <%= image_tag_with_at2x "/images/etsy_team_effort.jpg", alt: "" %>
-        <div class="caption">A few of my co-workers from Etsy on IPO day</div>
-      </div>
+  <footer>&nbsp;</footer>
+</div>
 
-  <section class="writing">
-    <div class="content_wrapper">
-      <p>
-        Excited about the device&apos;s impending release, my coworker and I set to work developing <%= link_to "Etsy for Apple Watch", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %>. <!--Proudly, our little Etsy app extension has been an App Store staple since day one.--> It enables Handoff and offers notifications, package tracking, and a recommended items feed for Etsy buyers. At release, we were delighted to be featured on both the App Store and in the new Apple Watch app&apos;s featured section.
-      </p>
 
-      <div class="apple_watch_image_container desktop">
-        <%= image_tag_with_at2x "/images/etsy_apple_watch_app.jpg", alt: "Etsy for Apple Watch" %>
-        <div class="caption">
-          <%= link_to "Etsy for Apple Watch", "https://itunes.apple.com/app/etsy/id477128284?mt=8&media=watch" %>, 2015. Left to right, top to bottom: notification, recommended items glance, home screen, orders shipped glance, package tracking modal.
-        </div>
-      </div>
-
-      <div class="apple_watch_image_container mobile">
-        <%= image_tag_with_at2x "/images/etsy_apple_watch_app_mobile.jpg", alt: "Etsy for Apple Watch" %>
-      </div>
-
-      <p>
-        In 2014 I designed Etsy&apos;s second native app, <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %>, which launched in six countries. Building on top of that foundation my team and I launched a card reader for both Android and iOS devices that helps sellers make in-person cash and credit card sales. Unlike a Square reader, it is powerfully integrated with an Etsy seller&apos;s shop inventory. Fred Wilson writes about it <%= link_to "here", "http://avc.com/2014/10/feature-friday-etsy-in-real-life/" %>.
-      </p>
-
-      <div class="soe_image_container">
-        <%= image_tag_with_at2x "/images/etsy_soe_card_reader.jpg", alt: "" %>
-        <div class="caption">
-            <%= link_to "Sell on Etsy", "https://itunes.apple.com/us/app/sell-on-etsy/id860815329?mt=8", class: "no_wrap" %> and <%= link_to "The Sell on Etsy Reader", "https://www.etsy.com/reader", class: "no_wrap" %>, Etsy 2014
-        </div>
-      </div>
-
-      <p>
-        Before Etsy I worked at Mixel, building fun apps for creating, sharing and remixing collages. While there I created designs for the iPad, iPhone and web. On the web side, I implemented my work using Ruby on Rails, Javascript and CSS. <%= link_to "Mixel was acquired by Etsy", "http://allthingsd.com/20130122/etsy-acquires-mixel-for-mobile-team/" %> in January 2013.
-      </p>
-      <p>
-        I start my day changing diapers and playing with <%= link_to "this guy", "https://www.instagram.com/p/BJDlOpFguj3/?taken-by=roystanfield" %>! I&#39;m always looking to rejuvinate my iOS coding ability, but in the near term I&#39;ll be focusing on React. &hellip;And hey, if you see a nice car in the city streets, please add it to <%= link_to "#roysgarage", "https://instagram.com/explore/tags/roysgarage/" %>  on Instagram.
-      </p>
-      </div><!-- .content_wrapper -->
-  </section>
-
-</div><!-- .outside_wrapper -->
+<!-- <h1>
+  Practice, be generous, create accessible work, and design every day… it’s fun!
+</h1> -->
