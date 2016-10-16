@@ -99,10 +99,7 @@ h2 {
 
 .outside_wrapper {
   margin: 32px;
-}
-
-footer {
-  height: 96px;
+  margin-bottom: 72px;
 }
 
 @media only screen and (min-width: 680px) {
@@ -120,7 +117,7 @@ footer {
     font-size: 2.23rem;
     line-height: 3.1rem;
     clear: right;
-    padding: 80px 0;
+    padding: 80px 0 72px 0;
   }
 
   p {
