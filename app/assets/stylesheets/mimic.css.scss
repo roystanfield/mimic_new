@@ -104,21 +104,21 @@ h2 {
 
 @media only screen and (min-width: 680px) {
 
-  
-  html {
-    font-weight: 300;
-  }
-
   header {
-    margin: -16px 0 32px 0;
+    margin: 32px 0;
   } 
 
   h1 {
-    font-size: 2.23rem;
-    line-height: 3.1rem;
+    font-size: 3.3rem;
+    line-height: 4rem;
     clear: right;
-    padding: 80px 0 72px 0;
+    padding: 32px 0 48px 0;
   }
+
+  h2 {
+    font-size: 0.75rem;
+    padding-bottom: 12px;
+  } 
 
   p {
     font-size: 1rem;
@@ -126,37 +126,32 @@ h2 {
     margin: 0;
   }
 
-  ul {
-    float: right;
-    text-align: right;
-  }
+  // ul {
+  //   float: right;
+  //   text-align: right;
+  // }
 
   li {
-    float: left;
+    // float: left;
     margin-right: 24px;
   }
 
   li.last {
     margin-right: 0;
   }
-
-  .writing {
-    width: 600px;
-  }
-
 }
 
 
 @media only screen and (min-width: 934px) {
 
   .outside_wrapper {
-    width: 870px;
+    width: 680px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .writing {
-    margin-left: 14%;
-  }
+  // .writing {
+  //   margin-left: 8%;
+  // }
  
 }
