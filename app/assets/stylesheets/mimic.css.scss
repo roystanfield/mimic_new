@@ -79,8 +79,8 @@ p {
 h1 {
   font-family: $headlines-family;
   font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 1.9rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
   padding-bottom: 24px;
 }
 
@@ -102,17 +102,16 @@ h2 {
   margin-bottom: 72px;
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 600px) {
 
   header {
     margin: 32px 0;
   } 
 
   h1 {
-    font-size: 3.1rem;
-    line-height: 3.8rem;
-    clear: right;
-    padding: 32px 0 48px 0;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    padding: 32px 110px 48px 0;
   }
 
   h2 {
@@ -142,16 +141,17 @@ h2 {
 }
 
 
-@media only screen and (min-width: 934px) {
+@media only screen and (min-width: 800px) {
+
+  h1 {
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    padding-right: 80px;
+  }
 
   .outside_wrapper {
     width: 640px;
     margin-left: auto;
     margin-right: auto;
   }
-
-  // .writing {
-  //   margin-left: 8%;
-  // }
- 
 }
