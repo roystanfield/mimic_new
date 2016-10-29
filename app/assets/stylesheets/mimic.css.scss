@@ -10,11 +10,11 @@ html {
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
+  background-color: $body-color;
 }
 
 body {
   margin: 0;
-  background-color: $body-color;
   font-family: $body-copy-family;
 }
 
@@ -116,7 +116,7 @@ h2 {
 
   .callout {
     font-weight: 300;
-    font-size: 1.35rem;
+    font-size: 1.31rem;
     line-height: 2.1rem;
   }
 
@@ -144,8 +144,8 @@ h2 {
   }
 
   img {
-    padding-top: 32px;
-    padding-bottom: 64px;
+    padding-top: 48px;
+    padding-bottom: 72px;
   }
 
   li {
