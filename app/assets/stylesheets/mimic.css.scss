@@ -108,7 +108,7 @@ h2 {
   margin: 64px 24px;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 760px) {
 
   header {
     margin: 32px 0;
@@ -118,6 +118,10 @@ h2 {
     font-weight: 300;
     font-size: 1.31rem;
     line-height: 2.1rem;
+
+    .br {
+      display: block;
+    }
   }
 
   .outside_wrapper {
