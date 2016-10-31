@@ -31,10 +31,6 @@ a:link {
   border-bottom: 1px solid $anchor-link-color;
 }
 
-h1 a:link {
-  border-bottom-width: 2px;
-}
-
 ul a:link {
   border-bottom: none;
 }
@@ -88,7 +84,7 @@ h1 {
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 2.2rem;
-  margin: 32px 0 32px 0;
+  margin: 32px 0 24px 0;
 }
 
 h2 {
